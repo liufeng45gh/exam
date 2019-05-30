@@ -4,8 +4,8 @@ package com.lucifer.service.cms;
 import com.lucifer.exception.Oauth2CodeInvalidException;
 import com.lucifer.exception.Oauth2LoginException;
 import com.lucifer.mapper.oauth2.UserMapper;
-import com.lucifer.model.AccessToken;
-import com.lucifer.model.User;
+import com.lucifer.model.user.AccessToken;
+import com.lucifer.model.user.User;
 import com.lucifer.utils.Md5Utils;
 import com.lucifer.utils.Result;
 import com.lucifer.utils.StringHelper;
@@ -20,8 +20,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.io.IOException;
-import java.security.KeyManagementException;
-import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Map;
 

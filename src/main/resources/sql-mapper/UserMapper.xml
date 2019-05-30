@@ -4,7 +4,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.lucifer.mapper.oauth2.UserMapper">
-	<resultMap type="com.lucifer.model.User" id="userMap">
+	<resultMap type="com.lucifer.model.user.User" id="userMap">
 		<id column="id" property="id"/>
 		<result column="uuid" property="uuid"/>
 		<result column="weixin_id" property="weixinId"/>
@@ -29,7 +29,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		<result column="updated_at" property="updatedAt"/>
 	</resultMap>
 
-	<resultMap type="com.lucifer.model.AccessToken" id="accessTokenMap">
+	<resultMap type="com.lucifer.model.user.AccessToken" id="accessTokenMap">
 		<id column="user_id" property="userId"/>
 		<result column="access_token" property="token"/>
 		<result column="code" property="code"/>

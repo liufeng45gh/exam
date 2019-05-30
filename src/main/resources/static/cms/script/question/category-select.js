@@ -20,7 +20,7 @@ var setting = {
     },
     async: {
         enable: true,
-        url:"/cms/category/list.json",
+        url:"/cms/is-more/list.json",
         dataFilter: isParentDataFilter
     }
 };
@@ -87,17 +87,17 @@ function onClick(e, treeId, treeNode) {
     }
     if (v.length > 0 ) v = v.substring(0, v.length-1);
 
-    var cityObj = $("#category_input");
+    var cityObj = $("#isMoreSelect_input");
     cityObj.attr("value", v);
 
     if (k.length > 0 ) k = k.substring(0, k.length-1);
-    var idObj = $("#category_id");
+    var idObj = $("#isMoreSelect");
     idObj.attr("value", k);
 }
 
 function showMenu() {
-    var cityObj = $("#category_input");
-    var cityOffset = $("#category_input").offset();
+    var cityObj = $("#isMoreSelect_input");
+    var cityOffset = $("#isMoreSelect_input").offset();
     var maxZIndex = getMaxZIndex();
     //$("#menuContent").css({zIndex: maxZIndex});
     $("#menuContent").css({zIndex: maxZIndex, left:cityOffset.left + "px", top:cityOffset.top + cityObj.outerHeight() + "px"}).slideDown("fast");

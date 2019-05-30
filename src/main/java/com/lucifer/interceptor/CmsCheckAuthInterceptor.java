@@ -1,7 +1,7 @@
 package com.lucifer.interceptor;
 
 import com.lucifer.mapper.oauth2.UserMapper;
-import com.lucifer.model.AccessToken;
+import com.lucifer.model.user.AccessToken;
 
 
 import com.lucifer.service.cms.UserLoginService;

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lucifer.mapper.QuestionMapper">
+	<resultMap type="com.lucifer.model.Question" id="QuestionMap">
+		<id column="id" property="id"/>
+		<result column="title" property="title"/>
+		<result column="status" property="status"/>
+		<result column="right_answer" property="rightAnswer"/>
+		<result column="right_answer_description" property="rightAnswerDescription"/>
+		<result column="is_more_select" property="isMoreSelect"/>
+
+		<result column="created_at" property="createdAt"/>
+		<result column="updated_at" property="updatedAt"/>
+	</resultMap>
+
+	<select id="questionCmsSearchList" resultMap="QuestionMap">
+		select * from question
+		<where>
+			<if test="title != null and title !=''">
+				and title like '${title}%'
+			</if>
+		</where>
+		order by id asc
+		limit #{offset}, #{count}
+	</select>
+
+	<select id="questionCmsSearchCount" resultType="java.lang.Integer">
+		select count(*) from question
+		<where>
+			<if test="title != null and title !=''">
+				and title like '${title}%'
+			</if>
+		</where>
+
+	</select>
+
+
+</mapper>

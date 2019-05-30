@@ -1,7 +1,8 @@
-package com.lucifer.model;
+package com.lucifer.model.user;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.ser.std.DateSerializer;
+import com.lucifer.model.user.BaseModel;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;

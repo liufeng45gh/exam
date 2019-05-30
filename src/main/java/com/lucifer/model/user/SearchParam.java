@@ -1,4 +1,4 @@
-package com.lucifer.model;
+package com.lucifer.model.user;
 
 /**
  * Created by liufx on 16/1/11.

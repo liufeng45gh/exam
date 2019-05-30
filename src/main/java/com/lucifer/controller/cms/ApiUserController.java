@@ -4,8 +4,8 @@ package com.lucifer.controller.cms;
 
 import com.lucifer.dao.cms.UserDao;
 import com.lucifer.exception.ParamException;
-import com.lucifer.model.SearchParam;
-import com.lucifer.model.User;
+import com.lucifer.model.user.SearchParam;
+import com.lucifer.model.user.User;
 
 import com.lucifer.service.cms.UserService;
 import com.lucifer.utils.PageInfoWriter;

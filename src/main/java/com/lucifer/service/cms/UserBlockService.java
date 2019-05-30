@@ -3,8 +3,8 @@ package com.lucifer.service.cms;
 
 
 import com.lucifer.dao.cms.UserBlockDao;
-import com.lucifer.model.UserBlock;
-import com.lucifer.model.UserBlockSearchParam;
+import com.lucifer.model.user.UserBlock;
+import com.lucifer.model.user.UserBlockSearchParam;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

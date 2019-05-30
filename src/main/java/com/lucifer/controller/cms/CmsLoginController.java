@@ -1,8 +1,8 @@
 package com.lucifer.controller.cms;
 
 import com.lucifer.mapper.oauth2.UserMapper;
-import com.lucifer.model.AccessToken;
-import com.lucifer.model.User;
+import com.lucifer.model.user.AccessToken;
+import com.lucifer.model.user.User;
 
 import com.lucifer.service.cms.UserLoginService;
 import com.lucifer.utils.Constant;

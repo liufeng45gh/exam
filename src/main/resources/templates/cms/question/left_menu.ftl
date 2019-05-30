@@ -4,14 +4,14 @@
     </div>
     <div class="panel-body">
         <ul class="tree tree-lines" >
-            <li  id="left_menu_list"><a href="/cms/goods/list" >商品列表</a> </li>
-            <li  id="left_menu_add"><a href="/cms/goods/add" >添加商品</a> </li>
+            <li  id="left_menu_list"><a href="/cms/question/list" >问题列表</a> </li>
+            <li  id="left_menu_add"><a href="/cms/question/add" >添加新问题</a> </li>
         </ul>
     </div>
 
 </div>
 <script>
-$("#top_menu_goods").addClass("selected");
+$("#top_menu_question").addClass("selected");
 </script>
 <link rel="stylesheet" href="/ztree/zTree_v3/css/demo.css" type="text/css"/>
 <link rel="stylesheet" href="/ztree/zTree_v3/css/zTreeStyle/zTreeStyle.css" type="text/css"/>

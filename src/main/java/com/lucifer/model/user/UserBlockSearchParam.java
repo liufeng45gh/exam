@@ -1,4 +1,6 @@
-package com.lucifer.model;
+package com.lucifer.model.user;
+
+import com.lucifer.model.user.UserBlock;
 
 public class UserBlockSearchParam extends UserBlock {
 	

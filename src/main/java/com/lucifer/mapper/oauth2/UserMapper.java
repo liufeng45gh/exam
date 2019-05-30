@@ -1,7 +1,7 @@
 package com.lucifer.mapper.oauth2;
 
-import com.lucifer.model.AccessToken;
-import com.lucifer.model.User;
+import com.lucifer.model.user.AccessToken;
+import com.lucifer.model.user.User;
 import org.mybatis.spring.annotation.MapperScan;
 
 import java.util.List;

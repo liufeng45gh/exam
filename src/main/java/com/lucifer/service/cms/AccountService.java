@@ -3,7 +3,7 @@ package com.lucifer.service.cms;
 
 
 import com.lucifer.dao.cms.UserDao;
-import com.lucifer.model.User;
+import com.lucifer.model.user.User;
 import com.lucifer.utils.*;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;

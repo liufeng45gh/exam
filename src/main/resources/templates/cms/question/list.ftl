@@ -15,14 +15,13 @@
 
             <div id="admin_right">
                 <div class="content_box" style="border:none">
-                    <div class="position"><span>商品</span><span>&gt;</span><span>商品列表</span></div>
+                    <div class="position"><span>问题</span><span>&gt;</span><span>问题列表</span></div>
                     <div class="operating">
                         <div class="search f_l">
                             <form  action="" method="get">
-                                分类
-                                <input class="small" name="phone" type="text" />
-                                名称
-                                <input class="small" name="nickName" type="text" />
+                                标题
+                                <input class="small" name="title" type="text" style="width: 260px;"/>
+
 
                                 <button class="btn" type="submit"><span class="sch">搜 索</span></button>
                             </form>

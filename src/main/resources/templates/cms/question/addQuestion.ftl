@@ -17,9 +17,9 @@
            <ul class="nav">
            <li data-id="list"><a id="currentItem" href="#">快速导航 <span class="icon-caret-right"></span></a></li>
 
-           <li  data-id="task"><a href="/cms/goods/list">商品</a>
+           <li  data-id="task"><a href="/cms/goods/list">问题</a>
            </li>
-           <li  data-id="story"><a href="/cms/goods/add">添加商品</a>
+           <li  data-id="story"><a href="/cms/goods/add">添加问题</a>
            </li>
 
            </ul>
@@ -29,39 +29,62 @@
                     <#include "left_menu.ftl"/>
 
                     <div id="admin_right">
-                    			<div class="position"><span>商品</span><span>|</span><span>添加商品</span></div>
+                    			<div class="position"><span>问题</span><span>|</span><span>添加问题</span></div>
                     			<div class="content form_content" >
 
 
-                                        <form action="/cms/goods/add" method="post">
+                                        <form action="/cms/question/add" method="post">
                                         <table class="table_new">
                                             <tbody>
                                                 <tr><th width="20%"></th><td><span style="color:${KEY_RESULT_MESSAGE_COLOR?default("")};">${KEY_RESULT_MESSAGE?default("")}</span></td></tr>
                                                 <tr>
-                                                    <th width="20%" style="text-align:right;">商品名称:</th>
-                                                    <td><input id="account_input"  class="form-control" name="name" style="display:inline-block;" /><label id="account_input_info" style="display:inline-block;">* 商品名称</label></td>
+                                                    <th width="20%" style="text-align:right;">问题标题:</th>
+                                                    <td><input id="account_input"  class="form-control" name="name" style="display:inline-block;" /><label id="account_input_info" style="display:inline-block;">* 问题标题</label></td>
                                                 </tr>
                                                 <tr>
-                                                    <th width="20%" style="text-align:right;">分类:</th>
+                                                    <th width="20%" style="text-align:right;">单选/多选:</th>
                                                     <td>
-                                                        <input type="hidden" id="category_id" name="categoryId"/>
-                                                        <input id="category_input" readonly="readonly" class="form-control" name="category" style="display:inline-block;"/><label id="category_input_info" style="display:inline-block;">* 分类</label>
+
+                                                        <select id = "isMoreSelect">
+                                                            <option value="0"> 单选</option>
+                                                            <option value="1">多选</option>
+                                                        </select>
+                                                        <!--
+                                                         <input type="hidden" id="isMoreSelect" name="isMoreSelect"/>
+                                                        <input id="isMoreSelect_input" readonly="readonly" class="form-control" name="category" style="display:inline-block;"/><label id="isMoreSelect_input_info" style="display:inline-block;">* 单选/多选</label>
+                                                         -->
+                                                    </td>
+                                                </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <table class="table_new">
+                                        <tbody>
+                                                <tr>
+                                                    <th width="20%" style="text-align:right;"></th>
+                                                    <td>
+                                                        <button class="btn btn-primary" type="button" onclick="return checkFiled();">添加答案</button>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <th width="20%" style="text-align:right;">品牌:</th>
                                                     <td><input id="password_input"  class="form-control" name="brand" style="display:inline-block;"/><label id="brand_info" style="display:inline-block;">* 品牌</label></td>
                                                 </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="table_new">
+                                        <tbody>
+                                            <tr>
+                                                <th width="20%" style="text-align:right;">正确答案:</th>
+                                                <td><input id="right_answer"  class="form-control" name="name" style="display:inline-block;" /><label id="right_answer_input_info" style="display:inline-block;">* 正确答案</label></td>
+                                            </tr>
+                                            <tr>
+                                                <th width="20%" style="text-align:right;">填写正确答案描述:</th>
+                                                <td>
+                                                    <textarea id="editor" style="width:1024px;height:500px;" name="content"></textarea>
 
-                                                <tr>
-                                                    <th width="20%" style="text-align:right;">详情:</th>
-                                                    <td>
-
-
-                                                        <textarea id="editor" style="width:1024px;height:500px;" name="content"></textarea>
-
-                                                    </td>
-                                                </tr>
+                                                </td>
+                                            </tr>
 
                                                 <tr>
                                                     <th></th>
@@ -110,8 +133,8 @@
 
 
 <div style="display: none; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; cursor: move; opacity: 0; background: rgb(255, 255, 255);"></div>
-<script type="text/javascript" charset="UTF-8" src="/cms/script/goods/add.js"></script>
-<script type="text/javascript" charset="UTF-8" src="/cms/script/goods/category-select.js"></script>
+<script type="text/javascript" charset="UTF-8" src="/cms/script/question/add.js"></script>
+<script type="text/javascript" charset="UTF-8" src="/cms/script/question/category-select.js"></script>
 
 <div id="menuContent" class="menuContent" style="display:none; position: absolute;">
     <ul id="treeDemo" class="ztree" style="margin-top:0; width:160px;"></ul>

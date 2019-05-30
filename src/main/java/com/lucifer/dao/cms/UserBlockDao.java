@@ -1,8 +1,8 @@
 package com.lucifer.dao.cms;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.lucifer.model.UserBlock;
-import com.lucifer.model.UserBlockSearchParam;
+import com.lucifer.model.user.UserBlock;
+import com.lucifer.model.user.UserBlockSearchParam;
 import com.lucifer.utils.DateUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

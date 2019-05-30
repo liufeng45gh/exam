@@ -1,4 +1,4 @@
-package com.lucifer.model;
+package com.lucifer.model.user;
 
 import org.springframework.format.annotation.DateTimeFormat;
 

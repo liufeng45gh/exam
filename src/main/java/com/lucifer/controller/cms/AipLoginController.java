@@ -1,7 +1,7 @@
 package com.lucifer.controller.cms;
 
 
-import com.lucifer.model.User;
+import com.lucifer.model.user.User;
 
 import com.lucifer.service.cms.UserLoginService;
 import com.lucifer.utils.Result;
