@@ -81,4 +81,11 @@ public class CmsQuestionController {
         return questionService.addUserSubmit(question);
     }
 
+    @RequestMapping(value="/cms/question/{id}/delete",method = RequestMethod.POST)
+    @ResponseBody
+    @Transactional
+    public Result deleteSubmit(@PathVariable(value = "id") Long id){
+        return Result.ok();
+    }
+
 }

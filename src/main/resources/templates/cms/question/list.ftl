@@ -20,7 +20,7 @@
                         <div class="search f_l">
                             <form  action="" method="get">
                                 标题
-                                <input class="small" name="title" type="text" style="width: 260px;"/>
+                                <input class="small" name="title" type="text" style="width: 260px;" value="${title!}"/>
 
 
                                 <button class="btn" type="submit"><span class="sch">搜 索</span></button>
@@ -47,5 +47,5 @@
         $("#left_menu_list").addClass("selected");
     });
 </script>
-
+<script type="text/javascript" charset="UTF-8" src="/cms/script/question/list.js"></script>
 </body></html>

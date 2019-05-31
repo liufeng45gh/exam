@@ -83,6 +83,9 @@ function addSubmit(){
          dataType: "json",
          success: function (data) {
               layer.msg("提交成功",{icon: 6});
+              setTimeout(function(){
+                window.location.reload();
+              },2000)
          },
          error: function (message) {
              layer.msg("系统错误",{icon: 5});

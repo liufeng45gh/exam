@@ -16,10 +16,17 @@
 
         <td>${(question.title)!}</td>
 
-        <td>-- </td>
+        <td>
+            <#if question.status == "0">
+            disable
+            <#else>
+            enable
+            </#if>
+        </td>
 
     <td>
         <a href="javascript:void(0)" onclick="toEdit(${question.id?c})">编辑</a>
+         <a href="javascript:void(0)" onclick="toDelete(${question.id?c})">删除</a>
     </td>
     </tr>
         </#list>
