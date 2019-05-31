@@ -18,7 +18,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 	<insert id="insertAnswer">
 		insert into answer
-		(question_id ,content ,answer1.option,created_at ,updated_at,is_deleted)
+		(question_id ,content ,answer.option,created_at ,updated_at,is_deleted)
 		values
 		(#{questionId} ,#{content} ,#{option} ,now() ,now() ,0 )
 	</insert>
