@@ -1,6 +1,7 @@
 package com.lucifer.model;
 
 import java.util.Date;
+import java.util.List;
 
 public class Question {
 
@@ -19,6 +20,8 @@ public class Question {
     private Date createdAt;
 
     private Date updatedAt;
+
+    private List<Answer> answerList;
 
     public Long getId() {
         return id;
@@ -82,5 +85,13 @@ public class Question {
 
     public void setUpdatedAt(Date updatedAt) {
         this.updatedAt = updatedAt;
+    }
+
+    public List<Answer> getAnswerList() {
+        return answerList;
+    }
+
+    public void setAnswerList(List<Answer> answerList) {
+        this.answerList = answerList;
     }
 }

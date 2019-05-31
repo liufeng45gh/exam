@@ -15,6 +15,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
 
@@ -26,7 +27,7 @@ import javax.sql.DataSource;
  */
 @SpringBootConfiguration
 @AutoConfigureAfter({ DataBaseConfiguration.class })
-
+@EnableTransactionManagement
 public class MyBatisConfiguration {
 
     private  Log logger = LogFactory.getLog(this.getClass());
@@ -70,6 +71,7 @@ public class MyBatisConfiguration {
             org.apache.ibatis.session.Configuration configuration = sqlSessionFactory
                     .getConfiguration();
             configuration.setMapUnderscoreToCamelCase(true);
+
 
             return sqlSessionFactory;
 

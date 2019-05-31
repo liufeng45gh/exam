@@ -12,4 +12,6 @@ public interface QuestionMapper {
     List<Question> questionCmsSearchList(@Param("offset") Integer offset,@Param("count") Integer count,@Param(value = "title") String title);
 
     Integer questionCmsSearchCount(@Param(value = "title") String title);
+
+    Integer insertQuestion(Question question);
 }

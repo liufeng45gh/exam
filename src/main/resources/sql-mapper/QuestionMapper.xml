@@ -37,5 +37,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 	</select>
 
+	<insert id="insertQuestion" useGeneratedKeys="true" keyProperty="id">
+		insert into question
+		(title ,status,right_answer,right_answer_description ,created_at,updated_at ,is_deleted,is_more_select)
+		values
+		(#{title} ,0,#{rightAnswer},#{rightAnswerDescription} ,now() ,now() ,0,#{isMoreSelect})
+	</insert>
 
 </mapper>

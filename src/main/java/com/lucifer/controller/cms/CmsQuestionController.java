@@ -1,14 +1,18 @@
 package com.lucifer.controller.cms;
 
+import com.lucifer.mapper.AnswerMapper;
 import com.lucifer.mapper.QuestionMapper;
 
+import com.lucifer.model.Answer;
 import com.lucifer.model.Question;
+import com.lucifer.service.cms.QuestionService;
 import com.lucifer.utils.PageUtil;
+import com.lucifer.utils.Result;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -22,6 +26,14 @@ public class CmsQuestionController {
 
     @Resource
     QuestionMapper questionMapper;
+
+    @Resource
+    AnswerMapper answerMapper;
+
+    final Logger logger = LoggerFactory.getLogger(this.getClass());
+
+    @Resource
+    QuestionService questionService;
 
     @RequestMapping(value="/cms/question/list",method = RequestMethod.GET)
     public String list(@RequestParam(value = "page",defaultValue = "1") Integer page,
@@ -60,6 +72,13 @@ public class CmsQuestionController {
         hashMap.put("name", "单选");
         list.add(hashMap);
         return list;
+    }
+
+    @RequestMapping(value="/cms/question/add",method = RequestMethod.POST)
+    @ResponseBody
+    @Transactional
+    public Result addUserSubmit(@RequestBody Question question){
+        return questionService.addUserSubmit(question);
     }
 
 }

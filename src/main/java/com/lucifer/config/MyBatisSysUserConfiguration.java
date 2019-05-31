@@ -32,7 +32,7 @@ import javax.sql.DataSource;
  */
 @SpringBootConfiguration
 @AutoConfigureAfter({ DataBaseSysUserConfiguration.class })
-@EnableTransactionManagement(proxyTargetClass=true)
+@EnableTransactionManagement
 
 public class MyBatisSysUserConfiguration {
 

@@ -31,15 +31,12 @@
                     <div id="admin_right">
                     			<div class="position"><span>问题</span><span>|</span><span>添加问题</span></div>
                     			<div class="content form_content" >
-
-
-                                        <form action="/cms/question/add" method="post">
                                         <table class="table_new">
                                             <tbody>
                                                 <tr><th width="20%"></th><td><span style="color:${KEY_RESULT_MESSAGE_COLOR?default("")};">${KEY_RESULT_MESSAGE?default("")}</span></td></tr>
                                                 <tr>
                                                     <th width="20%" style="text-align:right;">问题标题:</th>
-                                                    <td><input id="account_input"  class="form-control" name="name" style="display:inline-block;" /><label id="account_input_info" style="display:inline-block;">* 问题标题</label></td>
+                                                    <td><input id="title_input"  class="form-control" name="name" style="display:inline-block;" /><label id="account_input_info" style="display:inline-block;">* 问题标题</label></td>
                                                 </tr>
                                                 <tr>
                                                     <th width="20%" style="text-align:right;">单选/多选:</th>
@@ -58,25 +55,35 @@
 
                                         </tbody>
                                     </table>
+                                    <table style="display:none;" >
+                                        <tbody id="answer-template" >
+                                            <tr class="add-new">
+                                                <th width="20%" style="text-align:right;"><label  style="display:inline-block;float:right;">*  答案内容</label></th>
+                                                <td>
+                                                    <input  class="form-control option"  style="width: 70px;display:inline-block;"/>
+                                                    <input  class="form-control content"  style="display:inline-block;margin-left:3px;"/>
+                                                    <label  style="display:inline-block;"></label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
                                     <table class="table_new">
-                                        <tbody>
+                                        <tbody id="answer-body">
                                                 <tr>
                                                     <th width="20%" style="text-align:right;"></th>
                                                     <td>
-                                                        <button class="btn btn-primary" type="button" onclick="return checkFiled();">添加答案</button>
+                                                        <button class="btn btn-primary" type="button" onclick="addAnswer();">添加答案</button>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <th width="20%" style="text-align:right;">品牌:</th>
-                                                    <td><input id="password_input"  class="form-control" name="brand" style="display:inline-block;"/><label id="brand_info" style="display:inline-block;">* 品牌</label></td>
-                                                </tr>
+
                                         </tbody>
                                     </table>
                                     <table class="table_new">
                                         <tbody>
                                             <tr>
                                                 <th width="20%" style="text-align:right;">正确答案:</th>
-                                                <td><input id="right_answer"  class="form-control" name="name" style="display:inline-block;" /><label id="right_answer_input_info" style="display:inline-block;">* 正确答案</label></td>
+                                                <td><input id="right_answer"  class="form-control"  style="display:inline-block;" /><label id="right_answer_input_info" style="display:inline-block;">* 正确答案</label></td>
                                             </tr>
                                             <tr>
                                                 <th width="20%" style="text-align:right;">填写正确答案描述:</th>
@@ -85,16 +92,15 @@
 
                                                 </td>
                                             </tr>
-
-                                                <tr>
-                                                    <th></th>
-                                                    <td>
-                                                        <button class="btn btn-primary" type="submit" onclick="return checkFiled();">保存设置</button>
-                                                    </td>
-                                                </tr>
+                                            <tr>
+                                                <th></th>
+                                                <td>
+                                                    <button class="btn btn-primary"  onclick="return addSubmit();">保存设置</button>
+                                                </td>
+                                            </tr>
                                             </tbody>
                                         </table>
-                                    </form>
+
                                 </div>
                     </div>
              </div>
@@ -107,28 +113,7 @@
 			$("#left_menu_add").addClass("selected");
 		});
 		
-		function checkFiled(){
-			var account=$("#account_input").val();
-			if(account.trim()==""){
-				$("#account_input_info").css("color","red");
-				$("#account_input_info").html("* 账号必须填写");
-				return false;
-			}
-			var nick_name=$("#nick_name_input").val();
-			if(nick_name.trim()==""){
-				$("#nick_name_input_info").css("color","red");
-				$("#nick_name_input_info").html("* 昵称必须填写");
-				return false;
-			}
-			
-			var password=$("#password_input").val();
-			if(password.trim()==""){
-				$("#password_input_info").css("color","red");
-				$("#password_input_info").html("* 密码必须填写");
-				return false;
-			}
-			return true;
-		}
+
 	</script>
 
 
@@ -136,7 +121,5 @@
 <script type="text/javascript" charset="UTF-8" src="/cms/script/question/add.js"></script>
 <script type="text/javascript" charset="UTF-8" src="/cms/script/question/category-select.js"></script>
 
-<div id="menuContent" class="menuContent" style="display:none; position: absolute;">
-    <ul id="treeDemo" class="ztree" style="margin-top:0; width:160px;"></ul>
-</div>
+
 </body></html>
