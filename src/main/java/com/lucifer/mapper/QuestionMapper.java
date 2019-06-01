@@ -14,4 +14,8 @@ public interface QuestionMapper {
     Integer questionCmsSearchCount(@Param(value = "title") String title);
 
     Integer insertQuestion(Question question);
+
+    Question getQuestion(@Param(value = "id") Long id);
+
+    Integer deleteQuestion(@Param(value = "id") Long id);
 }

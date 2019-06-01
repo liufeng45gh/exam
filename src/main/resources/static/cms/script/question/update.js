@@ -1,7 +1,7 @@
 
 $(function(){
     $("#btn-submit").click(function(){
-        addSubmit();
+        updateSubmit();
     });
     var ue = UE.getEditor('editor');
 });
@@ -10,7 +10,8 @@ function addAnswer(){
     $("#answer-body").append($("#answer-template").html());
 }
 
-function addSubmit(){
+function updateSubmit(){
+    var id=$("#id_input").val();
     var title=$("#title_input").val();
     if(title.trim()==""){
         layer.msg("标题必须填写",{icon: 5});
@@ -47,6 +48,7 @@ function addSubmit(){
      });
 
      var request_data = {};
+     request_data.id = id;
      request_data.title = title;
      request_data.rightAnswer = right_answer;
      request_data.isMoreSelect = $("#isMoreSelect").val();
@@ -64,15 +66,15 @@ function addSubmit(){
 
      $.ajax({
          type: "POST",
-         url: "/cms/question/add",
+         url: "/cms/question/update",
          contentType: "application/json; charset=utf-8",
          data: JSON.stringify(request_data),
          dataType: "json",
          success: function (data) {
-              layer.msg("提交成功",{icon: 6});
+              layer.msg("修改成功",{icon: 6});
               setTimeout(function(){
-                window.location.reload();
-              },2000)
+                window.parent.location.reload();
+              },1000)
          },
          error: function (message) {
              layer.msg("系统错误",{icon: 5});

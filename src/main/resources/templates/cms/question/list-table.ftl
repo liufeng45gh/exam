@@ -4,6 +4,7 @@
         <th width="140px">id</th>
         <th width="159px">标题</th>
 
+        <th width="180px">类型</th>
         <th width="180px">状态</th>
 
         <th>操作</th>
@@ -15,6 +16,14 @@
         <td>${(question.id)!}</td>
 
         <td>${(question.title)!}</td>
+
+        <td>
+            <#if question.isMoreSelect == 0>
+                单选
+                <#else>
+                多选
+            </#if>
+        </td>
 
         <td>
             <#if question.status == "0">

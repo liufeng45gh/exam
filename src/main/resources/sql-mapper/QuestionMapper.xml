@@ -44,4 +44,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		(#{title} ,0,#{rightAnswer},#{rightAnswerDescription} ,now() ,now() ,0,#{isMoreSelect})
 	</insert>
 
+	<select id="getQuestion" resultMap="QuestionMap">
+		select * from question where id = #{id}
+	</select>
+	<delete id="deleteQuestion">
+		delete from question where id = #{id}
+	</delete>
+
 </mapper>

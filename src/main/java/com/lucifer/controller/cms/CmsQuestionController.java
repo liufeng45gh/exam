@@ -85,6 +85,24 @@ public class CmsQuestionController {
     @ResponseBody
     @Transactional
     public Result deleteSubmit(@PathVariable(value = "id") Long id){
+        questionMapper.deleteQuestion(id);
+        return Result.ok();
+    }
+
+
+    @RequestMapping(value="/cms/question/{id}/update",method = RequestMethod.GET)
+    public String toUpdate(@PathVariable("id") Long id,HttpServletRequest request){
+        Question question = questionMapper.getQuestion(id);
+        List<Answer> answerList = answerMapper.answerListByQuestionId(question.getId());
+        request.setAttribute("question",question);
+        request.setAttribute("answerList",answerList);
+        return "/cms/question/updateQuestion";
+    }
+
+    @RequestMapping(value="/cms/question/update",method = RequestMethod.POST)
+    @ResponseBody
+    @Transactional
+    public Result updateSubmit(@RequestBody Question question){
         return Result.ok();
     }
 
