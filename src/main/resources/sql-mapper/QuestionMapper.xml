@@ -51,4 +51,15 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		delete from question where id = #{id}
 	</delete>
 
+	<update id="updateQuestion">
+		update question
+		set title = #{title},
+		right_answer = #{rightAnswer} ,
+		right_answer_description = #{rightAnswerDescription},
+		is_more_select = #{isMoreSelect},
+		updated_at = now()
+		where id = #{id}
+
+	</update>
+
 </mapper>

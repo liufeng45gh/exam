@@ -2,7 +2,7 @@
     <tbody>
     <tr><th width="20%"></th><td><span style="color:${KEY_RESULT_MESSAGE_COLOR?default("")};">${KEY_RESULT_MESSAGE?default("")}</span></td></tr>
     <tr>
-        <th width="20%" style="text-align:right;">问题标题:</th>
+        <th width="20%" style="text-align:right; vertical-align: middle;">问题标题:</th>
         <td>
             <input type="hidden" id="id_input" value="${(question.id)!}"/>
             <input id="title_input"  class="form-control" style="display:inline-block;" value="${(question.title)!}" />
@@ -29,10 +29,11 @@
 <table style="display:none;" >
 <tbody id="answer-template" >
 <tr class="add-new">
-    <th width="20%" style="text-align:right;"><label  style="display:inline-block;float:right;">*  答案内容</label></th>
+    <th width="20%" style="text-align:right;vertical-align: middle;"><label  style="display:inline-block;float:right;">*  答案内容</label></th>
     <td>
         <input  class="form-control option"  style="width: 70px;display:inline-block;"/>
         <input  class="form-control content"  style="display:inline-block;margin-left:3px;"/>
+        <a href="javascript:void(0)" onclick="removeAnswerThis(this);"  class="delete-a">删除</a>
         <label  style="display:inline-block;"></label>
     </td>
 </tr>
@@ -50,10 +51,11 @@
     <#if answerList??>
         <#list answerList as answer>
             <tr class="add-new">
-                <th width="20%" style="text-align:right;"><label  style="display:inline-block;float:right;">*  答案内容</label></th>
+                <th width="20%" style="text-align:right;vertical-align: middle;"><label  style="display:inline-block;float:right;">*  答案内容</label></th>
                 <td>
                     <input  class="form-control option"  style="width: 70px;display:inline-block;" value="${(answer.option)!}"/>
                     <input  class="form-control content"  style="display:inline-block;margin-left:3px;" value="${(answer.content)!}"/>
+                    <a href="javascript:void(0)" onclick="removeAnswerThis(this);" class="delete-a">删除</a>
                     <label  style="display:inline-block;"></label>
                 </td>
             </tr>
@@ -84,3 +86,4 @@
 </tr>
 </tbody>
 </table>
+<script type="text/javascript" charset="UTF-8" src="/cms/script/question/form_filed.js"></script>

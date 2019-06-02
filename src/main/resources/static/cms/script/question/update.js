@@ -3,12 +3,8 @@ $(function(){
     $("#btn-submit").click(function(){
         updateSubmit();
     });
-    var ue = UE.getEditor('editor');
 });
 
-function addAnswer(){
-    $("#answer-body").append($("#answer-template").html());
-}
 
 function updateSubmit(){
     var id=$("#id_input").val();

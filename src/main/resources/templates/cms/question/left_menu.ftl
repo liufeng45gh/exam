@@ -13,6 +13,3 @@
 <script>
 $("#top_menu_question").addClass("selected");
 </script>
-<link rel="stylesheet" href="/ztree/zTree_v3/css/demo.css" type="text/css"/>
-<link rel="stylesheet" href="/ztree/zTree_v3/css/zTreeStyle/zTreeStyle.css" type="text/css"/>
-<script type="text/javascript" src="/ztree/zTree_v3/js/jquery.ztree.core.js"></script>

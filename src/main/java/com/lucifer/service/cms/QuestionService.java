@@ -26,8 +26,21 @@ public class QuestionService {
     final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Transactional
-    public Result addUserSubmit(Question question){
+    public Result addSubmit(Question question){
         questionMapper.insertQuestion(question);
+        List<Answer> answerList = question.getAnswerList();
+        logger.info("question id is {}",question.getId());
+        for (Answer answer: answerList) {
+            answer.setQuestionId(question.getId());
+            answerMapper.insertAnswer(answer);
+        }
+        return Result.ok();
+    }
+
+    @Transactional
+    public Result updateSubmit(Question question){
+        questionMapper.updateQuestion(question);
+        answerMapper.deleteAnswersByQuestionId(question.getId());
         List<Answer> answerList = question.getAnswerList();
         logger.info("question id is {}",question.getId());
         for (Answer answer: answerList) {

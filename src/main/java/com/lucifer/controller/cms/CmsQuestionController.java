@@ -78,7 +78,7 @@ public class CmsQuestionController {
     @ResponseBody
     @Transactional
     public Result addUserSubmit(@RequestBody Question question){
-        return questionService.addUserSubmit(question);
+        return questionService.addSubmit(question);
     }
 
     @RequestMapping(value="/cms/question/{id}/delete",method = RequestMethod.POST)
@@ -103,7 +103,7 @@ public class CmsQuestionController {
     @ResponseBody
     @Transactional
     public Result updateSubmit(@RequestBody Question question){
-        return Result.ok();
+      return questionService.updateSubmit(question);
     }
 
 }

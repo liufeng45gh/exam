@@ -3,12 +3,9 @@ $(function(){
     $("#btn-submit").click(function(){
         addSubmit();
     });
-    var ue = UE.getEditor('editor');
 });
 
-function addAnswer(){
-    $("#answer-body").append($("#answer-template").html());
-}
+
 
 function addSubmit(){
     var title=$("#title_input").val();

@@ -25,4 +25,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		select * from answer where question_id = #{questionId} order by answer.option asc
 	</select>
 
+	<delete id="deleteAnswersByQuestionId">
+		delete from answer where question_id = #{questionId}
+	</delete>
+
 </mapper>

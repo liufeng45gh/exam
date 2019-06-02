@@ -18,4 +18,6 @@ public interface QuestionMapper {
     Question getQuestion(@Param(value = "id") Long id);
 
     Integer deleteQuestion(@Param(value = "id") Long id);
+
+    Integer updateQuestion(Question question);
 }

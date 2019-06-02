@@ -50,7 +50,7 @@
 
 <div style="display: none; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; cursor: move; opacity: 0; background: rgb(255, 255, 255);"></div>
 <script type="text/javascript" charset="UTF-8" src="/cms/script/question/add.js"></script>
-<script type="text/javascript" charset="UTF-8" src="/cms/script/question/category-select.js"></script>
+
 
 
 </body></html>
