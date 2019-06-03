@@ -1,0 +1,59 @@
+.page-bg-1{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.img-bg-1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+}
+
+.logo-1{
+    width: 2.3rem;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+.font-1{
+    width: 17.3rem;
+    position: absolute;
+    left: 4.4rem;
+    top: 5rem;
+}
+
+.praise-bg{
+    width: 18rem;
+    height: 2.5rem;
+    position: absolute;
+    left: 3.8rem;
+    top: 14rem;
+}
+.praise-div{
+     width: 18rem;
+      height: 2.5rem;
+      position: absolute;
+      left: 3.8rem;
+      top: 14rem;
+     color: white;
+     font-size: 1rem;
+     line-height: 2.5rem;
+}
+
+
+.map-1{
+     width: 22rem;
+     position: absolute;
+     left: 1.9rem;
+     top: 17.6rem;
+}
+
+.ma-1{
+   width: 4rem;
+       position: absolute;
+       left: 1rem;
+       bottom: 1rem;
+}
