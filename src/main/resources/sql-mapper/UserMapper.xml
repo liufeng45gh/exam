@@ -70,7 +70,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	select * from user where weixin_id=#{weixinId}
 	</select>
 	<update id="updatePassword">
-		update user set password = #{password} where id = #{id}
+		update user set
+		password = #{password} ,
+		salt = #{salt}
+		where id = #{id}
 	</update>
 	<update id="updateUserNick">
 		update user set nick_name = #{nickName} where id = #{id}
