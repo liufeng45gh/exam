@@ -1,20 +1,20 @@
-<link rel="stylesheet" href="/css/7-page.css"/>
+<link rel="stylesheet" href="/web/css/7-page.css"/>
 
 <div class="page-bg-7">
-<img class="img-bg-7" src="/img/page7/bg.jpg"/>
+<img class="img-bg-7" src="/web/img/page7/bg.jpg"/>
 
-<img class="img-bg-7-border" src="/img/page7/border.jpg"/>
+<img class="img-bg-7-border" src="/web/img/page7/border.jpg"/>
 
-<img class="img-invite-7" src="/img/page7/invite.png"/>
+<img class="img-invite-7" src="/web/img/page7/invite.png"/>
 
-<img class="img-line-7-1" src="/img/page7/line.png"/>
-
-
+<img class="img-line-7-1" src="/web/img/page7/line.png"/>
 
 
-<img class="img-submit-7" src="/img/page7/btn.png" onclick="submitInvite();"/>
 
-<img class="img-line-7-2" src="/img/page7/line.png"/>
+
+<img class="img-submit-7" src="/web/img/page7/btn.png" onclick="submitInvite();"/>
+
+<img class="img-line-7-2" src="/web/img/page7/line.png"/>
 
 <div class="name_text">
     姓名

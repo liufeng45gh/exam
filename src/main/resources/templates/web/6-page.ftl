@@ -1,11 +1,11 @@
-<link rel="stylesheet" href="/css/6-page.css?v=1.0"/>
+<link rel="stylesheet" href="/web/css/6-page.css?v=1.0"/>
 
 <div class="page-bg-6">
-<img class="img-bg-6" src="/img/page6/bg.jpg"/>
+<img class="img-bg-6" src="/web/img/page6/bg.jpg"/>
 
-<img class="title-6" src="/img/page6/title.png"/>
+<img class="title-6" src="/web/img/page6/title.png"/>
 
-<img class="font-6" src="/img/page6/font.png"/>
+<img class="font-6" src="/web/img/page6/font.png"/>
 
 
 <div class="map-service">

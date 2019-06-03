@@ -1,16 +1,16 @@
 
 
 <#if independent>
-<link rel="stylesheet" href="/css/mobile.css"/>
+<link rel="stylesheet" href="/web/css/mobile.css"/>
 </#if>
 
-<link rel="stylesheet" href="/css/5-place.css?v=1.0"/>
+<link rel="stylesheet" href="/web/css/5-place.css?v=1.0"/>
 <div  class="page-bg-5">
-<img class="img-bg-5" src="/img/page5/bg.jpg"/>
+<img class="img-bg-5" src="/web/img/page5/bg.jpg"/>
 
-<img class="img-map-5" src="/img/page5/map.png"/>
+<img class="img-map-5" src="/web/img/page5/map.png"/>
 
-<img class="title-5" src="/img/page5/title.png"/>
+<img class="title-5" src="/web/img/page5/title.png"/>
 <!--
 <img class="praise-5" src="/img/page6/praise.png" onclick="submitPraise()"/>
 
