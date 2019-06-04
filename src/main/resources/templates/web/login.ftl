@@ -20,7 +20,7 @@
 </head>
 <body>
 <!-- Swiper -->
-<link rel="stylesheet" href="/web/css/1-page.css"/>
+<link rel="stylesheet" href="/web/css/login.css"/>
 
 <div class="page-bg-1">
     <img class="img-bg-1" src="/web/img/page1/bg.jpg"/>
@@ -28,22 +28,22 @@
 
 
     <div class="title-1" >
-        中国石油天然气销售分公司
+        昆仑能源答题系统
     </div>
     <div class="title-2">
-        (昆仑能源有限公司)
+        系统使用人数: 30948
     </div>
 
     <div class="title-3">
-        “形式、目标 、任务、 责任 ”
+        <input placeholder="请输入手机号" class="name_input"/>
     </div>
     <div class="title-4">
-        知识答题
+        <input placeholder="请输入密码" class="name_input"/>
     </div>
 
-    <a class="btn-1" style="display: block; " href="/login">
-        点击进入
-    </a>
+    <div class="btn-1">
+        登录
+    </div>
 
 
 

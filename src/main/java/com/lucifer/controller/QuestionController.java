@@ -8,9 +8,5 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class QuestionController {
 
-    @RequestMapping(value = {"/","index"})
-    public String index(HttpServletRequest request){
-        request.setAttribute("independent",false);
-        return  "/web/index";
-    }
+
 }
