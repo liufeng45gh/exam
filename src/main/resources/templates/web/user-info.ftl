@@ -17,32 +17,35 @@
     <script src="/web/js/common.js"></script>
 
 
-
 </head>
 <body>
 <!-- Swiper -->
-<link rel="stylesheet" href="/web/css/list.css"/>
+<link rel="stylesheet" href="/web/css/user-info.css"/>
 
 <div class="page-bg-1">
     <img class="img-bg-1" src="/web/img/page1/bg.jpg"/>
     <img class="logo-1" src="/web/img/page1/logo.png"/>
 
-
     <div class="title-1" >
-        宋庆海
-    </div>
-    <div class="title-2">
-        昆仑能源有限公司
+        请完善个人信息
     </div>
 
 
+    <div class="title-3">
+        <input placeholder="请输入姓名" class="name_input"/>
+    </div>
+    <div class="title-4">
+        <input placeholder="请输入单位" class="name_input"/>
+    </div>
 
-    <a class="btn-1" style="display: block; " href="/login">
-        顺序答题
-    </a>
+    <!--
+    <div class="btn-1">
+        登录
+    </div>
+    -->
 
-    <a class="btn-2" style="display: block; " href="/login">
-        模拟考试
+    <a class="btn-1" style="display: block; " href="/list">
+        保存
     </a>
 
 
@@ -56,5 +59,4 @@
 
 
 </body>
-<script src="/web/js/list.js"></script>
 </html>
