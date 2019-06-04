@@ -20,7 +20,7 @@
 </head>
 <body>
 <!-- Swiper -->
-<link rel="stylesheet" href="/web/css/login.css"/>
+<link rel="stylesheet" href="/web/css/list.css"/>
 
 <div class="page-bg-1">
     <img class="img-bg-1" src="/web/img/page1/bg.jpg"/>
@@ -28,27 +28,20 @@
 
 
     <div class="title-1" >
-        昆仑能源答题系统
+        宋庆海
     </div>
     <div class="title-2">
-        系统使用人数: 30948
+        (昆仑能源有限公司)
     </div>
 
-    <div class="title-3">
-        <input placeholder="请输入手机号" class="name_input"/>
-    </div>
-    <div class="title-4">
-        <input placeholder="请输入密码" class="name_input"/>
-    </div>
 
-    <!--
-    <div class="btn-1">
-        登录
-    </div>
-    -->
 
-    <a class="btn-1" style="display: block; " href="/list">
-        登录
+    <a class="btn-1" style="display: block; " href="/login">
+        顺序答题
+    </a>
+
+    <a class="btn-2" style="display: block; " href="/login">
+        模拟考试
     </a>
 
 
