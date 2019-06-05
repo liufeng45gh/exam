@@ -1,0 +1,34 @@
+.page-bg-1{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.img-bg-1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+}
+
+
+.title-1{
+     color: #FC9F06;
+     font-size: 0.9rem;
+     -webkit-text-stroke: 0.005rem white;
+     width: 100%;
+     position: absolute;
+     top: 2rem;
+     height: 4rem;
+     text-align: center;
+     font-weight: bold!important;
+}
+
+
+.wa-channel-back{
+       background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAkCAMAAACkEQocAAAAA3NCSVQICAjb4U/gAAAAhFBMVEUzMzPt7e2vr688PDzZ2dlPT0/////Pz89CQkLMzMzn5+fHx8dZWVk5OTlMTEzFxcXd3d1cXFzV1dXx8fHl5eVUVFRAQEBERETr6+teXl5ISEi1tbU+Pj7S0tLv7+9SUlLp6enz8/NaWlo6OjpOTk7X19dWVlbb29vJycnR0dFgYGDf399s4YYjAAAACXBIWXMAAAsSAAALEgHS3X78AAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAANlJREFUKJFtk9kSgjAMRaNgQHABFNxww93//0CbhsE2aV86c85MJ729BRSrqKMx7SB4vAFoAyJOAeCrheWLTImK+N1yT1SN4WfmrmB+QSmOlm9RiqQ1vB74IJKI+AilULwXU+JPl7N4E5953ArLuxVKkRMvBTdiOQ9xhJz4TnGEPeV8VZyFPoiOuoUN8FByWDsuX++kBQciLs6RBKLqQ9ThDrG34dgRP43/gP+nPXpVcMvgl8SrD9VtkmmBD6eIfkW5umst7CfojfgGLzJlQGBhTBMSWHTpgfYf8hYYKjG3m18AAAAASUVORK5CYII=) no-repeat;
+       background-position: 2rem center;
+       background-size: 2rem 3rem;
+}
+
+

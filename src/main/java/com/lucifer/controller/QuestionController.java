@@ -18,4 +18,9 @@ public class QuestionController {
     public String showScore(){
         return   "/web/show-score";
     }
+
+    @RequestMapping(value = "/practice",method = RequestMethod.GET)
+    public String practice(){
+        return   "/web/practice";
+    }
 }
