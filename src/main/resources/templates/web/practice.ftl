@@ -29,22 +29,20 @@
 
 
     <div class="title-1" >
-        <a style="position: absolute;width: 90px;height: 45px;top: 0;left: 0;z-index: 10;" class="wa-channel-back"></a>
+        <a  class="wa-channel-back"></a>
         顺序练习
     </div>
-    <div class="title-2">
-        昆仑能源有限公司
-    </div>
+
+    <div class="single-select"> [单选]</div>
+    <div class="question">&nbsp;&nbsp;&nbsp;&nbsp;驾驶机动车违法，造势逃逸的，依法追究什么责任</div>
 
 
+    <div class="answer answer1"><div class="option">A</div> <div class="option-text">民事责任</div> </div>
 
-    <a class="btn-1" style="display: block; " href="/login">
-        顺序答题
-    </a>
+    <div class="answer answer2"><div class="option">B</div>  <div class="option-text">形式责任 </div></div>
+    <div class="answer answer3"><div class="option">C</div> <div class="option-text"> 没有责任</div></div>
 
-    <a class="btn-2" style="display: block; " href="/login">
-        模拟考试
-    </a>
+    <div class="answer answer4"><div class="option">C</div> <div class="option-text">再无责任</div></div>
 
 
 
