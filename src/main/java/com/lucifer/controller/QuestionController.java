@@ -13,4 +13,9 @@ public class QuestionController {
     public String toLogin(){
         return   "/web/list";
     }
+
+    @RequestMapping(value = "/show-score",method = RequestMethod.GET)
+    public String showScore(){
+        return   "/web/show-score";
+    }
 }
