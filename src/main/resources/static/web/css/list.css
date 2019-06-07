@@ -56,27 +56,25 @@
 }
 
 .title-1{
-   color: #FC9F06;
-   font-size: 0.9rem;
-   -webkit-text-stroke: 0.005rem white;
-   text-align: right;
-   width: 25rem;
-   position: absolute;
-   top: 2rem;
-   padding-right: 2rem;
-   font-weight: bold;
+     color: #333;
+     font-size: 0.9rem;
+     text-align: right;
+     width: 25rem;
+     position: absolute;
+     top: 2rem;
+     font-weight: bold;
+     right: 1rem;
 }
 
 .title-2{
-   color: #FC9F06;
-   font-size: 0.8rem;
-   -webkit-text-stroke: 0.005rem white;
-   text-align: right;
-   width: 25rem;
-   position: absolute;
-   top: 4rem;
-   padding-right: 2rem;
-   font-weight: bold;
+       color: #333;
+       font-size: 0.8rem;
+       text-align: right;
+       width: 25rem;
+       position: absolute;
+       top: 4rem;
+       font-weight: bold;
+       right: 1rem;
 }
 
 .title-3{
@@ -100,29 +98,33 @@
 }
 
 .btn-1{
-      width: 9.8rem;
-      position: absolute;
-      left: 8.0rem;
-      top: 10.4rem;
-      text-align: center;
-      font-size: 1.7rem;
-      color: white;
-      background-color: #AD7923;
-      border-radius: 0.4rem;
-      height: 2.5rem;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    top: 15.4rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: white;
+    background-color: #55ce9f;
+    border-radius: 1.4rem;
+    height: 5.5rem;
+    line-height: 5.5rem;
+    text-decoration-line: none;
 }
 
 .btn-2{
-      width: 9.8rem;
-      position: absolute;
-      left: 8.0rem;
-      top: 18.4rem;
-      text-align: center;
-      font-size: 1.7rem;
-      color: white;
-      background-color: #AD7923;
-      border-radius: 0.4rem;
-      height: 2.5rem;
+       width: 60%;
+       position: absolute;
+       left: 20%;
+       top: 28.4rem;
+       text-align: center;
+       font-size: 1.7rem;
+       color: white;
+       background-color: #2a90d7;
+       border-radius: 1.4rem;
+       height: 5.5rem;
+       line-height: 5.5rem;
+       text-decoration-line: none;
 }
 
 

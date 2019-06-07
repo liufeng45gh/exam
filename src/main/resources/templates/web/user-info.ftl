@@ -26,27 +26,31 @@
     <img class="img-bg-1" src="/web/img/page1/bg.jpg"/>
     <img class="logo-1" src="/web/img/page1/logo.png"/>
 
-    <div class="title-1" >
-        请完善个人信息
-    </div>
+    <div class="location">
+        <div class="title-1" >
+            请完善个人信息
+        </div>
 
 
-    <div class="title-3">
-        <input placeholder="请输入姓名" class="name_input"/>
-    </div>
-    <div class="title-4">
-        <input placeholder="请输入单位" class="name_input"/>
+        <div class="title-3">
+            <input placeholder="请输入姓名" class="name_input"/>
+        </div>
+        <div class="title-4">
+            <input placeholder="请输入单位" class="name_input"/>
+        </div>
+
+        <!--
+        <div class="btn-1">
+            登录
+        </div>
+        -->
+
+        <a class="btn-1" style="display: block; " href="/list">
+            保存
+        </a>
+
     </div>
 
-    <!--
-    <div class="btn-1">
-        登录
-    </div>
-    -->
-
-    <a class="btn-1" style="display: block; " href="/list">
-        保存
-    </a>
 
 
 

@@ -21,7 +21,7 @@
 </head>
 <body>
 <!-- Swiper -->
-<link rel="stylesheet" href="/web/css/practice.css"/>
+<link rel="stylesheet" href="/web/css/mock-exam.css"/>
 
 <div class="page-bg-1">
     <img class="img-bg-1" src="/web/img/page1/bg.jpg"/>
@@ -30,7 +30,7 @@
 
     <div class="title-1" >
         <a  class="wa-channel-back"></a>
-        顺序练习
+        倒计时 41:34
     </div>
 
     <div class="single-select"> [单选]</div>
@@ -58,6 +58,7 @@
 
 
     <div class="bottom-nav">
+        <div class="submit-exam">交卷</div>
         <div class="pre-question">上一题</div>
         <div class="right-count">√ 65</div>
         <div class="wrong-count">× 28</div>

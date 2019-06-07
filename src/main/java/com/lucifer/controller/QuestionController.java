@@ -23,4 +23,9 @@ public class QuestionController {
     public String practice(){
         return   "/web/practice";
     }
+
+    @RequestMapping(value = "/mock-exam",method = RequestMethod.GET)
+    public String mockExam(){
+        return   "/web/mock-exam";
+    }
 }

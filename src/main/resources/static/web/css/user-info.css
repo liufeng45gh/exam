@@ -18,10 +18,17 @@
     top: 1rem;
 }
 
+.location{
+    position:relative;
+    width:100%;
+    top: 6rem;
+
+}
+
 
 
 .title-1{
-    color: #FC9F06;
+    color: #333;
     font-size: 1.6rem;
     -webkit-text-stroke: 0.005rem white;
     text-align: center;
@@ -47,7 +54,7 @@
     text-align: center;
     width: 100%;
     position: absolute;
-    top: 10rem;
+    top: 12rem;
 }
 
 .title-4{
@@ -57,30 +64,33 @@
     text-align: center;
     width: 100%;
     position: absolute;
-    top: 14rem;
+    top: 17rem;
 }
 
 .btn-1{
-      width: 9.8rem;
-      position: absolute;
-      left: 8.0rem;
-      top: 19rem;
-      text-align: center;
-      font-size: 1.7rem;
-      color: white;
-      background-color: #AD7923;
-      border-radius: 0.4rem;
-      height: 2.5rem;
+    width: 9.8rem;
+    position: absolute;
+    left: 8.0rem;
+    top: 23rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: white;
+    background-color: #AD7923;
+    border-radius: 0.4rem;
+    height: 2.5rem;
+    text-decoration-line: none;
 }
 
+
 .name_input{
-    width: 11rem;
-   text-align: left;
-   font-size: 1rem;
-   color: #AD7923;
-   border: 0.05rem solid;
-   height: 1.9rem;
-   border-radius: 0.2rem;
-   padding-left: 0.4rem;
+    width: 16rem;
+    text-align: left;
+    font-size: 1rem;
+    color: #AD7923;
+    border: 0.05rem solid;
+    height: 2.3rem;
+    line-height: 2.3rem;
+    border-radius: 0.2rem;
+    padding-left: 0.4rem;
 }
 
