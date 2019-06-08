@@ -45,3 +45,33 @@ function toEdit(id){
       content: url
     });
 }
+
+
+
+function updateStatus(id,status){
+    url = "/cms/question/update-status";
+    var data_send = {};
+    data_send.status = status;
+    data_send.id = id;
+    var delete_request =$.ajax({
+       type: 'post',
+       url: url,
+       data: data_send,
+       dataType: 'json'
+    });
+
+    delete_request.fail(function( jqXHR, textStatus ) {
+      if(jqXHR.status==401){
+         //openWeiboLogin();
+
+      }
+    });
+
+    delete_request.done(function(data) {
+        layer.msg("修改成功",{icon: 6});
+         setTimeout(function(){
+           window.location.reload();
+         },1000)
+    });
+
+}

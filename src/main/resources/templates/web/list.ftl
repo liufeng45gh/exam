@@ -28,10 +28,10 @@
     <img class="logo-1" src="/web/img/page1/logo.png"/>
 
 
-    <div class="title-1" >
+    <div class="title-1" id="nick_name" >
         宋庆海
     </div>
-    <div class="title-2">
+    <div class="title-2" id="department">
         昆仑能源有限公司
     </div>
 

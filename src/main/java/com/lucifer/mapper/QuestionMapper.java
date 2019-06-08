@@ -20,4 +20,6 @@ public interface QuestionMapper {
     Integer deleteQuestion(@Param(value = "id") Long id);
 
     Integer updateQuestion(Question question);
+
+    Integer updateQuestionStatus(@Param(value = "id") Long id, @Param(value = "status") Integer status);
 }

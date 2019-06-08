@@ -2,7 +2,7 @@
     <thead>
     <tr style="height:30px;">
         <th width="140px">id</th>
-        <th width="159px">标题</th>
+        <th width="559px">标题</th>
 
         <th width="180px">类型</th>
         <th width="180px">状态</th>
@@ -29,13 +29,19 @@
             <#if question.status == "0">
             disable
             <#else>
-            enable
+            <span style="color: green;">enable</span>
+
             </#if>
         </td>
 
     <td>
         <a href="javascript:void(0)" onclick="toEdit(${question.id?c})">编辑</a>
          <a href="javascript:void(0)" onclick="toDelete(${question.id?c})">删除</a>
+        <#if question.status == "0">
+        <a href="javascript:void(0)" onclick="updateStatus(${question.id?c},1)">enable</a>
+        <#else>
+        <a href="javascript:void(0)" onclick="updateStatus(${question.id?c},0)">disable</a>
+        </#if>
     </td>
     </tr>
         </#list>

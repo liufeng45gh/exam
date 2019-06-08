@@ -16,7 +16,7 @@ public interface UserMapper {
 
     User getUserByPhone(final String phone);
 
-    User insertUser(User user);
+    Integer insertUser(User user);
 
     /**
      * 修改密码

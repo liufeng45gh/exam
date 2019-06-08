@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
+@RequestMapping(value = "/mobile")
 public class QuestionController {
 
     @RequestMapping(value = "/list",method = RequestMethod.GET)

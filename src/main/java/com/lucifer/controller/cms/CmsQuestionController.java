@@ -106,4 +106,12 @@ public class CmsQuestionController {
       return questionService.updateSubmit(question);
     }
 
+    @RequestMapping(value="/cms/question/update-status",method = RequestMethod.POST)
+    @ResponseBody
+    @Transactional
+    public Result updateStatusSubmit(@RequestParam Long id, @RequestParam Integer status){
+        questionMapper.updateQuestionStatus(id,status);
+        return Result.ok();
+    }
+
 }

@@ -33,21 +33,24 @@
 
 
         <div class="title-3">
-            <input placeholder="请输入姓名" class="name_input"/>
+            <input placeholder="请输入姓名" class="name_input" id="nick_name"/>
         </div>
         <div class="title-4">
-            <input placeholder="请输入单位" class="name_input"/>
+            <input placeholder="请输入单位" class="name_input" id="department"/>
         </div>
 
-        <!--
-        <div class="btn-1">
+
+        <div class="btn-1" onclick="submitUserInfo();" >
             登录
         </div>
-        -->
 
+
+        <!--
         <a class="btn-1" style="display: block; " href="/list">
             保存
         </a>
+
+          -->
 
     </div>
 
@@ -60,7 +63,7 @@
 
 
 <!-- Initialize Swiper -->
-
+<script src="/web/js/user-info.js"></script>
 
 </body>
 </html>
