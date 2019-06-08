@@ -37,11 +37,11 @@
 
 
 
-    <a class="btn-1" style="display: block; " href="/practice">
+    <a class="btn-1" style="display: block; " href="/mobile/practice">
         顺序练习
     </a>
 
-    <a class="btn-2" style="display: block; " href="/mock-exam">
+    <a class="btn-2" style="display: block; " href="/mobile/mock-exam">
         模拟考试
     </a>
 

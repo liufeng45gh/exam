@@ -5,7 +5,7 @@ import com.lucifer.mapper.QuestionMapper;
 
 import com.lucifer.model.Answer;
 import com.lucifer.model.Question;
-import com.lucifer.service.cms.QuestionService;
+import com.lucifer.service.QuestionService;
 import com.lucifer.utils.PageUtil;
 import com.lucifer.utils.Result;
 import org.slf4j.Logger;
