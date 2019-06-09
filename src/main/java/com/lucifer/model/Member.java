@@ -11,6 +11,8 @@ public class Member {
 
     private String department;
 
+    private String company;
+
     private Date createdAt;
 
     private Date updatedAt;
@@ -61,5 +63,13 @@ public class Member {
 
     public void setUpdatedAt(Date updatedAt) {
         this.updatedAt = updatedAt;
+    }
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
     }
 }

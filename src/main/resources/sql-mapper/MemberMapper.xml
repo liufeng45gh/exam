@@ -8,6 +8,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		<id column="id" property="id"/>
 		<result column="telephone" property="telephone"/>
 		<result column="department" property="department"/>
+		<result column="company" property="company"/>
 		<result column="nickname" property="nickName"/>
 		<result column="created_at" property="createdAt"/>
 		<result column="updated_at" property="updatedAt"/>
@@ -41,7 +42,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		update member
 		set
 		nickname = #{nickName},
-		department = #{department}
+		department = #{department},
+		company = #{company}
 		where id = #{id}
 	</update>
 

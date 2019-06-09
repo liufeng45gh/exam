@@ -5,8 +5,32 @@ function submitUserInfo(){
         return;
     }
 
+    var company = $("#company").val();
+    if (company == null) {
+            layer.msg("公司不能为空");
+            return;
+     }
+    if (company.trim()=="") {
+        layer.msg("公司不能为空");
+        return;
+    }
+
+    if (company.trim()=="请选择") {
+        layer.msg("公司不能为空");
+        return;
+    }
+
     var department = $("#department").val();
+     if (department == null) {
+            layer.msg("部门不能为空");
+            return;
+     }
     if (department.trim()=="") {
+        layer.msg("部门不能为空");
+        return;
+    }
+
+    if (department.trim()=="请选择") {
         layer.msg("部门不能为空");
         return;
     }
@@ -14,6 +38,7 @@ function submitUserInfo(){
     var request_data = {};
     request_data.nickName = nick_name;
     request_data.department = department;
+    request_data.company = company;
 
     $.ajax({
          type: "POST",

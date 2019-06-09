@@ -42,7 +42,8 @@ $(function(){
             openUrl("/mobile/user-info");
           }else {
                $("#nick_name").text(data.data.nickName);
-               $("#department").text(data.data.department);
+               var cd = data.data.company + " | " + data.data.department
+               $("#department").text(cd);
           }
     });
 });

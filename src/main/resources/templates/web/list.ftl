@@ -29,10 +29,10 @@
 
 
     <div class="title-1" id="nick_name" >
-        宋庆海
+
     </div>
     <div class="title-2" id="department">
-        昆仑能源有限公司
+
     </div>
 
 
