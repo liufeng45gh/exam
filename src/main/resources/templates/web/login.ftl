@@ -31,7 +31,7 @@
         昆仑能源答题系统
     </div>
     <div class="title-2">
-        系统使用人数: 30948
+        系统使用人数: ${totalMemberCount!}
     </div>
 
     <div class="title-3">

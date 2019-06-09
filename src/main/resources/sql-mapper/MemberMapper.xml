@@ -45,4 +45,14 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		where id = #{id}
 	</update>
 
+	<select id="getSysConfigValue" resultType="java.lang.String">
+		select value from sys_config where sys_config.key = #{key}
+	</select>
+
+	<update id="updateSysConfigValue">
+		update sys_config
+		set value = #{value}
+		where sys_config.key = #{key}
+	</update>
+
 </mapper>

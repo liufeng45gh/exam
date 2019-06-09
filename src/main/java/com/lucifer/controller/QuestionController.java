@@ -46,6 +46,13 @@ public class QuestionController {
         return Result.ok(enableIdList);
     }
 
+    @RequestMapping(value = "/enable-random-id-list",method = RequestMethod.GET)
+    @ResponseBody
+    public Result enableRandomIdList(){
+        List<Long> enableIdList = questionMapper.enableRandomIdList(10);
+        return Result.ok(enableIdList);
+    }
+
     @RequestMapping(value = "/question/{id}",method = RequestMethod.GET)
     @ResponseBody
     public Result getQuestion(@PathVariable Long id){

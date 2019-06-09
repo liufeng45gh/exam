@@ -44,6 +44,12 @@ public class MemberLoginService {
             member = new Member();
             member.setTelephone(telephone);
             memberMapper.insertMember(member);
+            String totalMemberCount = memberMapper.getSysConfigValue("total_member_count");
+            Integer tmp = Integer.valueOf(totalMemberCount);
+            tmp = tmp + 1;
+            totalMemberCount = String.valueOf(tmp);
+            memberMapper.updateSysConfigValue("total_member_count",totalMemberCount);
+
         }
         String token = RandomStringUtils.randomAlphanumeric(20);
 

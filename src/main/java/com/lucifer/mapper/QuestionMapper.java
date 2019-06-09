@@ -24,4 +24,6 @@ public interface QuestionMapper {
     Integer updateQuestionStatus(@Param(value = "id") Long id, @Param(value = "status") Integer status);
 
     List<Long> enableIdList();
+
+    List<Long> enableRandomIdList( @Param(value = "count")  Integer count);
 }

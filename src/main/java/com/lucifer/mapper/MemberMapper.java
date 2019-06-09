@@ -18,4 +18,8 @@ public interface MemberMapper {
     Member getMemberById(@Param("id") Long id);
 
     void updateMemberInfo(Member member);
+
+    String getSysConfigValue(@Param("key") String key);
+
+    void updateSysConfigValue(@Param("key") String key, @Param("value")String value);
 }

@@ -1,5 +1,6 @@
 package com.lucifer.controller;
 
+import com.lucifer.mapper.MemberMapper;
 import com.lucifer.service.MemberLoginService;
 import com.lucifer.utils.Result;
 import org.springframework.stereotype.Controller;
@@ -19,6 +20,9 @@ public class LoginController {
     @Resource
     MemberLoginService memberLoginService;
 
+    @Resource
+    MemberMapper memberMapper;
+
     @RequestMapping(value = {"/","index"},method = RequestMethod.GET)
     public String index(HttpServletRequest request){
         request.setAttribute("independent",false);
@@ -26,7 +30,9 @@ public class LoginController {
     }
 
     @RequestMapping(value = "/login",method = RequestMethod.GET)
-    public String toLogin(){
+    public String toLogin(HttpServletRequest request){
+        String totalMemberCount = memberMapper.getSysConfigValue("total_member_count");
+        request.setAttribute("totalMemberCount",totalMemberCount);
         return   "/web/login";
     }
 

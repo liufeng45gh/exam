@@ -36,12 +36,18 @@
             <input placeholder="请输入姓名" class="name_input" id="nick_name"/>
         </div>
         <div class="title-4">
+            <!--
             <input placeholder="请输入单位" class="name_input" id="department"/>
+            -->
+            <select class="name_input" id="department">
+                <option value="">请输入单位</option>
+                <option></option>
+            </select>
         </div>
 
 
         <div class="btn-1" onclick="submitUserInfo();" >
-            登录
+            保存设置
         </div>
 
 

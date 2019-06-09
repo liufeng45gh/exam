@@ -2,11 +2,18 @@ function login(){
     var telephone = $("#telephone").val();
     if (telephone.trim()=="") {
         layer.msg("电话不能为空");
+        return;
+    }
+
+    if(!(/^1[3|5|7|8][0-9]\d{4,8}$/.test(telephone))){
+        layer.msg("手机号格式有误");
+        return ;
     }
 
     var password = $("#password").val();
     if (password.trim()=="") {
         layer.msg("密码不能为空");
+        return;
     }
 
     var request_data = {};
