@@ -5,7 +5,7 @@ import com.lucifer.mapper.QuestionMapper;
 
 import com.lucifer.model.Answer;
 import com.lucifer.model.Question;
-import com.lucifer.service.cms.QuestionService;
+import com.lucifer.service.QuestionService;
 import com.lucifer.utils.PageUtil;
 import com.lucifer.utils.Result;
 import org.slf4j.Logger;
@@ -104,6 +104,14 @@ public class CmsQuestionController {
     @Transactional
     public Result updateSubmit(@RequestBody Question question){
       return questionService.updateSubmit(question);
+    }
+
+    @RequestMapping(value="/cms/question/update-status",method = RequestMethod.POST)
+    @ResponseBody
+    @Transactional
+    public Result updateStatusSubmit(@RequestParam Long id, @RequestParam Integer status){
+        questionMapper.updateQuestionStatus(id,status);
+        return Result.ok();
     }
 
 }

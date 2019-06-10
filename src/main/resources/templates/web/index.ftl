@@ -41,7 +41,7 @@
         知识答题
     </div>
 
-    <a class="btn-1" style="display: block; " href="/login">
+    <a class="btn-1" style="display: block; " href="/mobile/login">
         点击进入
     </a>
 

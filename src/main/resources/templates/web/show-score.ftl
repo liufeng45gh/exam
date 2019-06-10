@@ -32,8 +32,8 @@
         87 分
     </div>
     <div class="title-2">
-        <div style="width:50%;display:inline-block;float:left;"> √ 65</div>
-        <div style="width:50%;display:inline-block;float:left;">× 28</div>
+        <div class="right-count"> √ 65</div>
+        <div  class="wrong-count">× 28</div>
 
     </div>
 
@@ -41,10 +41,11 @@
 
 
 
-
+    <!--
     <a class="btn-2" style="display: block; " href="/login">
         确定
     </a>
+    -->
 
 
 
@@ -57,5 +58,5 @@
 
 
 </body>
-<script src="/web/js/list.js"></script>
+<script src="/web/js/show-score.js"></script>
 </html>

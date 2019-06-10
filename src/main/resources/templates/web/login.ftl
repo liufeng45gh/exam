@@ -31,27 +31,28 @@
         昆仑能源答题系统
     </div>
     <div class="title-2">
-        系统使用人数: 30948
+        系统使用人数: ${totalMemberCount!}
     </div>
 
     <div class="title-3">
-        <input placeholder="请输入手机号" class="name_input"/>
+        <input placeholder="请输入手机号" class="name_input" id="telephone"/>
     </div>
     <div class="title-4">
-        <input placeholder="请输入密码" class="name_input"/>
+        <input placeholder="请输入密码" class="name_input" id="password"/>
     </div>
+
+
+    <div class="btn-1" onclick="login();">
+        登录
+    </div>
+
 
     <!--
-    <div class="btn-1">
-        登录
-    </div>
-    -->
+   <a class="btn-1" style="display: block; " href="/list">
+       登录
+   </a>
 
-    <a class="btn-1" style="display: block; " href="/list">
-        登录
-    </a>
-
-
+   -->
 
 
 
@@ -59,7 +60,7 @@
 
 
 <!-- Initialize Swiper -->
-
+<script src="/web/js/login.js"></script>
 
 </body>
 </html>

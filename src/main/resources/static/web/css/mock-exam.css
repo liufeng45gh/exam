@@ -106,8 +106,8 @@
     text-align: center;
     border-radius: 2rem;
     margin-left: 1.5rem;
-    font-size: 1.0rem;
 }
+
 .selected{
     background-color: #80c184;
     color: white;
@@ -123,28 +123,13 @@
     color: white;
 }
 
+
 .option-text{
     display: inline-block;
     float: left;
     height: 2rem;
     line-height: 2rem;
     margin-left: 1.5rem;
-}
-
-.confirm-select{
-   width: 4rem;
-   height: 2rem;
-   line-height: 2rem;
-   display: inline-block;
-   float: right;
-   text-align: center;
-   border-radius: 2rem;
-   margin-right: 1.5rem;
-   background-color: #80c184;
-   color: white;
-   top: 18.0rem;
-   position: absolute;
-   left: 1rem;
 }
 
 .title-2{
@@ -172,6 +157,22 @@
        text-align: left;
        font-weight: bold!important;
        margin-left: 1rem;
+}
+
+.confirm-select{
+   width: 4rem;
+   height: 2rem;
+   line-height: 2rem;
+   display: inline-block;
+   float: right;
+   text-align: center;
+   border-radius: 2rem;
+   margin-right: 1.5rem;
+   background-color: #80c184;
+   color: white;
+   top: 18.0rem;
+   position: absolute;
+   left: 1rem;
 }
 
 .right-answer{
@@ -225,7 +226,7 @@
     float: left;
     text-align: center;
     border-radius: 2rem;
-    margin-left: 0.5rem;
+    margin-left: 1.5rem;
     background-color: #6d91cf;
     color: white;
 }

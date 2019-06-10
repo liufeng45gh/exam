@@ -21,7 +21,7 @@
 </head>
 <body>
 <!-- Swiper -->
-<link rel="stylesheet" href="/web/css/practice.css"/>
+<link rel="stylesheet" href="/web/css/mock-exam.css"/>
 
 <div class="page-bg-1" id="outer-div">
     <img class="img-bg-1" src="/web/img/page1/bg.jpg"/>
@@ -30,10 +30,11 @@
 
     <div class="title-1" >
         <a  class="wa-channel-back" href="/mobile/list"></a>
-        顺序练习
+        <span id="time-count"></span>
+
     </div>
 
-    <div class="single-select" id="single-select"> </div>
+    <div class="single-select" id="single-select"> [单选]</div>
     <div class="question" id="title"></div>
 
     <!--
@@ -63,14 +64,16 @@
 
 
 
-
     <div class="bottom-nav">
+        <div class="submit-exam" onclick="submitExam()">交卷</div>
+        <!--
         <div class="pre-question" onclick="preQuestion();">上一题</div>
-        <div class="right-count">√ 0</div>
-        <div class="wrong-count">× 0</div>
+        -->
+        <div class="right-count">√ 65</div>
+        <div class="wrong-count">× 28</div>
 
         <div class="total-count" id="total-count">65/398</div>
-        <div class="next-question" onclick="nextQuestion()">下一题</div>
+        <div class="next-question"  onclick="nextQuestion()">下一题</div>
     </div>
 </div>
 
@@ -79,5 +82,5 @@
 
 
 </body>
-<script src="/web/js/practice.js"></script>
+<script src="/web/js/mock-exam.js"></script>
 </html>

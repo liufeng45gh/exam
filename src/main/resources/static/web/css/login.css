@@ -21,23 +21,21 @@
 
 
 .title-1{
-    color: #FC9F06;
-    font-size: 1.6rem;
-    -webkit-text-stroke: 0.005rem white;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    top: 6rem;
+  color: #FC9F06;
+  font-size: 1.6rem;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 6rem;
 }
 
 .title-2{
-    color: #e65100;
-    font-size: 1.2rem;
-    -webkit-text-stroke: 0.005rem white;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    top: 9rem;
+      color: #e65100;
+      font-size: 1.2rem;
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      top: 9rem;
 }
 
 .title-3{
@@ -61,16 +59,17 @@
 }
 
 .btn-1{
-      width: 9.8rem;
-      position: absolute;
-      left: 8.0rem;
-      top: 30.4rem;
-      text-align: center;
-      font-size: 1.7rem;
-      color: white;
-      background-color: #AD7923;
-      border-radius: 0.4rem;
-      height: 2.5rem;
+     width: 9.8rem;
+     position: absolute;
+     left: 8.0rem;
+     top: 30.4rem;
+     text-align: center;
+     font-size: 1.7rem;
+     color: white;
+     background-color: #AD7923;
+     border-radius: 0.4rem;
+     height: 2.5rem;
+     text-decoration-line: none;
 }
 
 .name_input{

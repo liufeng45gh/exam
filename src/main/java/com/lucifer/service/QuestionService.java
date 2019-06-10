@@ -1,4 +1,4 @@
-package com.lucifer.service.cms;
+package com.lucifer.service;
 
 import com.lucifer.mapper.AnswerMapper;
 import com.lucifer.mapper.QuestionMapper;
@@ -48,5 +48,12 @@ public class QuestionService {
             answerMapper.insertAnswer(answer);
         }
         return Result.ok();
+    }
+
+    public Question getQuestion(Long id){
+        Question question = questionMapper.getQuestion(id);
+        List<Answer> answerList = answerMapper.answerListByQuestionId(question.getId());
+        question.setAnswerList(answerList);
+        return question;
     }
 }

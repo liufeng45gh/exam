@@ -62,4 +62,15 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 	</update>
 
+	<update id="updateQuestionStatus">
+		update question set status = #{status} where id = #{id}
+	</update>
+
+	<select id="enableIdList" resultType="java.lang.Long">
+		select id from question where status = 1 order by id asc
+	</select>
+	<select id="enableRandomIdList" resultType="java.lang.Long">
+		select id from question where status = 1 order by rand() limit ${count}
+	</select>
+
 </mapper>
