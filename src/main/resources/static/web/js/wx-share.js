@@ -36,7 +36,7 @@ $(document).ready(function() {
         more_request.done(function(data) {
                 
                 wx.config({
-                    debug: true,
+                    debug: false,
                     appId: appid,
                     timestamp: data.timestamp,
                     nonceStr: data.nonceStr,
