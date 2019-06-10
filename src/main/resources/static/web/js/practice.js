@@ -80,8 +80,10 @@ function showCurrentQuestion(){
         var top = 3.0 + i * 4;
         top = top + "rem";
         var answer = answerList[i];
-        var html = '<div class="answer" style="top: '+ top + ';"><div class="option" onclick="doSelect(this)">'+answer.option+'</div> <div class="option-text">'+answer.content+'</div> </div>';
+        var html = '<div class="answer" style="top: '+ top + ';"><div class="option" onclick="doSelect(this)">'+answer.option+'</div> <div class="option-text">'+answer.content+'</div> <div style="clear: both;" > </div> </div>';
         $("#answer-area").append(html);
+
+
     }
     //var html = '<div class="answer" style=""><div class="option">A</div> <div class="option-text">民事责任</div> </div>';
 

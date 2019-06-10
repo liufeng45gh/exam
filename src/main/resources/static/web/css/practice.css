@@ -51,7 +51,7 @@
 .single-select{
     color: #378ce6;
     font-size: 1.0rem;
-    width: 100%;
+    width: 10rem;
     height: 2rem;
     position: absolute;
     line-height: 2rem;
@@ -80,9 +80,10 @@
       font-size: 1.0rem;
       width: 100%;
 
-      height: 6rem;
+      //height: 6rem;
       line-height: 2rem;
       text-align: left;
+      margin-top: 2rem;
 }
 
 .answer1{
@@ -131,7 +132,7 @@
 .option-text{
     display: inline-block;
     float: left;
-    height: 6rem;
+    //height: 6rem;
     line-height: 2rem;
     margin-left: 16%;
     width: 80%;
@@ -148,6 +149,7 @@
    color: white;
    margin-left: 1rem;
    font-size: 1.0rem;
+   margin-top: 3.6rem;
 }
 
 .title-2{
@@ -198,7 +200,7 @@
 
 .right-answer-outer-div{
     position: relative;
-    top: 2rem;
+    margin-top: 4rem;
 }
 
 .bottom-nav{
