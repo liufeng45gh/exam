@@ -9,8 +9,8 @@ if(lineLink.indexOf("?") != -1)
 //location.href=webHref.substring(0,pos);
 //var lineLink = "http://vote.dbdbd.cn/appreciate/index";
 //var lineLink = webHref.substring(0,pos);
-var shareContent = "昆仑能源2018企业公众开放日6月15日正式开启!";
-var shareTitle = "中国石油开放日 走近天然气终端利用的昆仑旗舰!";
+var shareContent = "了解形势目标，担当任务责任";
+var shareTitle = "天然气销售（昆仑能源）“形势、目标、任务、责任”主题教育知识竞赛在线答题";
 var appid = "wx41dbe3ee3f386699";
   
 $(document).ready(function() {
