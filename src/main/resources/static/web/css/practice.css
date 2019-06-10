@@ -44,7 +44,7 @@
 
 .single-select{
      color: #378ce6;
-     font-size: 0.6rem;
+     font-size: 1.0rem;
      width: 100%;
      position: absolute;
      top: 5.0rem;
@@ -57,28 +57,28 @@
 
 .question{
      color: #333;
-     font-size: 0.9rem;
+     font-size: 1.0rem;
      width: 100%;
      position: absolute;
      top: 5.0rem;
      height: 3rem;
      line-height: 1rem;
      text-align: left;
-     //font-weight: bold!important;
+     font-weight: bold!important;
      padding-left: 1rem;
      text-indent: 3em;
 }
 
 .answer{
     color: #333;
-      font-size: 0.9rem;
+      font-size: 1.0rem;
       width: 100%;
       position: absolute;
 
       height: 3rem;
       line-height: 1rem;
       text-align: left;
-      //font-weight: bold!important;
+      font-weight: bold!important;
 }
 
 .answer1{
@@ -132,7 +132,7 @@
 }
 
 .confirm-select{
-   width: 4rem;
+   width: 5rem;
    height: 2rem;
    line-height: 2rem;
    display: inline-block;
@@ -145,6 +145,7 @@
    top: 18.0rem;
    position: absolute;
    left: 1rem;
+   font-size: 1.0rem;
 }
 
 .title-2{
