@@ -34,8 +34,30 @@
 
     </div>
 
-    <div class="single-select" id="single-select"> [单选]</div>
-    <div class="question" id="title"></div>
+    <div class="middle-content">
+        <div class="single-select" id="single-select"> </div>
+        <div class="question" id="title"></div>
+        <div class="answer-area" id="answer-area">
+
+        </div>
+        <div style="clear:both;"></div>
+        <div class="confirm-select" onclick="confirmSelect();">确定选择</div>
+
+        <div class="right-answer-outer-div">
+            <div class="title-2">试题详解</div>
+            <div class="title-3">
+                <div class="right-answer-name">答案: </div>
+                <div class="right-answer" id="right-answer"></div>
+            </div>
+
+
+            <div class="right-answer-description">
+                <div id="right-answer-description"></div>
+
+                <div style="margin-top:5rem">&nbsp;</div>
+            </div>
+        </div>
+    </div>
 
     <!--
     <div class="answer answer1"><div class="option">A</div> <div class="option-text">民事责任</div> </div>
@@ -46,20 +68,7 @@
     <div class="answer answer4"><div class="option">C</div> <div class="option-text">再无责任</div></div>
     -->
 
-    <div class="confirm-select" onclick="confirmSelect();">确定选择</div>
 
-    <div class="right-answer-outer-div">
-        <div class="title-2">试题详解</div>
-
-        <div class="title-3">答案: </div>
-        <div class="right-answer" id="right-answer"></div>
-
-        <div class="right-answer-description">
-            <div id="right-answer-description"></div>
-
-            <div style="margin-top:5rem">&nbsp;</div>
-        </div>
-    </div>
 
 
 

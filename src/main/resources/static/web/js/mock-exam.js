@@ -93,19 +93,19 @@ function showCurrentQuestion(){
 
     var rtop = 10 + answerList.length * 4;
     rtop = rtop + "rem";
-    $(".confirm-select").css({top: rtop});
+    //$(".confirm-select").css({top: rtop});
 
 
     var rtop = -12 + answerList.length * 4;
     rtop = rtop + "rem";
-    $(".right-answer-outer-div").css({top: rtop});
+    //$(".right-answer-outer-div").css({top: rtop});
     $(".right-answer-outer-div").css({visibility: "hidden"});
     for (i=0; i<answerList.length ;i++) {
-        var top = 9.0 + i * 4;
+        var top = 3.0 + i * 4;
         top = top + "rem";
         var answer = answerList[i];
-        var html = '<div class="answer" style="top: '+ top + ';"><div class="option" onclick="doSelect(this)">'+answer.option+'</div> <div class="option-text">'+answer.content+'</div> </div>';
-        $("#outer-div").append(html);
+        var html = '<div class="answer" style="top: '+ top + ';"><div class="option" onclick="doSelect(this)">'+answer.option+'</div> <div class="option-text">'+answer.content+'</div> <div style="clear: both;" > </div> </div>';
+        $("#answer-area").append(html);
     }
     //var html = '<div class="answer" style=""><div class="option">A</div> <div class="option-text">民事责任</div> </div>';
 
