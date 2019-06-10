@@ -50,7 +50,7 @@ function submitUserInfo(){
                     layer.msg("修改成功",{icon: 6});
                   setTimeout(function(){
                     layer.closeAll();
-                    window.parent.location.href = "/mobile/list?"+ Math.random();
+                    window.location.href = "/mobile/list?"+ Math.random();
                   },2000)
               }else {
                 layer.msg("操作异常",{icon: 5});

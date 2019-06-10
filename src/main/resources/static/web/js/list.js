@@ -1,9 +1,11 @@
 $(".title-1").click(function(){
-    openUrl("/mobile/user-info");
+    //openUrl("/mobile/user-info");
+    window.location.href = "/mobile/user-info";
 });
 
 $(".title-2").click(function(){
-    openUrl("/mobile/user-info");
+    //openUrl("/mobile/user-info");
+    window.location.href = "/mobile/user-info";
 });
 
 function openUrl(url){
@@ -39,7 +41,8 @@ $(function(){
 
     _request.done(function(data) {
           if(data.data.nickName == null || data.data.department == null){
-            openUrl("/mobile/user-info");
+            //openUrl("/mobile/user-info");
+            window.location.href = "/mobile/user-info";
           }else {
                $("#nick_name").text(data.data.nickName);
                var cd = data.data.company + " | " + data.data.department
