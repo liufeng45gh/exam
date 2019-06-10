@@ -16,6 +16,10 @@ public class Constant {
 
 	//输出结果颜色
 	public static final String KEY_RESULT_MESSAGE_COLOR = "KEY_RESULT_MESSAGE_COLOR";
+
+	public static final String KEY_WX_JSAPI_TICKET = "EXAM:KEY-WX-JSAPI-TICKET";
+
+
 	
 
 
