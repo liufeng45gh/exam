@@ -1,4 +1,4 @@
-var shareImgUrl = "http://campaign.dbdbd.cn/img/share-icon.png";
+var shareImgUrl = "http://question.stack.xin/web/img/share-icon.png";
 
 var lineLink = window.location.href;
 if(lineLink.indexOf("?") != -1)
