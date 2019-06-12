@@ -35,7 +35,7 @@
     </div>
 
     <div class="title-3">
-        “形式、目标 、任务、 责任 ”
+        “形势、目标 、任务、 责任 ”
     </div>
     <div class="title-4">
         知识答题
