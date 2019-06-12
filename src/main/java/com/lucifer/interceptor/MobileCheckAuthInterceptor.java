@@ -54,7 +54,7 @@ public class MobileCheckAuthInterceptor extends HandlerInterceptorAdapter{
 		logger.info("token is: {}",token );
 		if(null==token){
 			//throw new Exception("not login!");
-			response.sendRedirect("/mobile/login");
+			response.sendRedirect("/mobile/index");
 			return false;
 		}
 
@@ -62,7 +62,7 @@ public class MobileCheckAuthInterceptor extends HandlerInterceptorAdapter{
 		//User user = (User)request.getSession().getAttribute(Constant.KEY_CMS_USER);
 		if(null==accessToken){
 			//throw new Exception("not login!");
-			response.sendRedirect("/mobile/login");
+			response.sendRedirect("/mobile/index");
 			return false;
 		}
 		return true;
