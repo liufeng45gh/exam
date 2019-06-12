@@ -10,7 +10,7 @@ if(lineLink.indexOf("?") != -1)
 //var lineLink = "http://vote.dbdbd.cn/appreciate/index";
 //var lineLink = webHref.substring(0,pos);
 var shareContent = "了解形势目标，担当任务责任";
-var shareTitle = "天然气销售“形势目标任务责任”主题活动知识竞赛";
+var shareTitle = "天然气销售“形势目标任务责任”主题教育知识竞赛";
 var appid = "wx41dbe3ee3f386699";
   
 $(document).ready(function() {
