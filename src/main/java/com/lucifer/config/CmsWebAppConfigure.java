@@ -33,7 +33,7 @@ public class CmsWebAppConfigure extends WebMvcConfigurerAdapter {
         //registry.addInterceptor(uCenterCheckAuthInterceptor).addPathPatterns("/u-center/**");
         //registry.addInterceptor(indexCacheInterceptor).addPathPatterns("/");
 
-        registry.addInterceptor(mobileCheckAuthInterceptor).addPathPatterns("/mobile/**");
+        //registry.addInterceptor(mobileCheckAuthInterceptor).addPathPatterns("/mobile/**");
         super.addInterceptors(registry);
     }
 

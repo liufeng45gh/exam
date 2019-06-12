@@ -35,11 +35,13 @@ $(function(){
 
     _request.fail(function( jqXHR, textStatus ) {
          //openWeiboLogin();
-        layer.msg("操作异常");
+        layer.msg("需要登陆");
+        window.location.href = "/mobile/index";
 
     });
 
     _request.done(function(data) {
+
           if(data.data.nickName == null || data.data.department == null){
             //openUrl("/mobile/user-info");
             window.location.href = "/mobile/user-info";
