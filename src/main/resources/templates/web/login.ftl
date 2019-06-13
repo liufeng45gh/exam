@@ -38,7 +38,7 @@
         <input placeholder="请输入手机号" class="name_input" id="telephone"/>
     </div>
     <div class="title-4">
-        <input placeholder="请输入密码" class="name_input" id="password"/>
+        <input placeholder="密码是 gas" class="name_input" id="password"/>
     </div>
 
 

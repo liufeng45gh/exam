@@ -5,7 +5,7 @@ function login(){
         return;
     }
 
-    if(!(/^1[3|5|7|8][0-9]\d{4,8}$/.test(telephone))){
+    if(!(/^1[3|5|6|7|8|9][0-9]\d{4,8}$/.test(telephone))){
         layer.msg("手机号格式有误");
         return ;
     }
